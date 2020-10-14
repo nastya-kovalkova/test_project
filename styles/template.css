@@ -1,0 +1,381 @@
+@font-face {
+    font-family: 'Segoe_UI';
+    src: url('../fonts/SegoeUI.eot');
+    src: url('../fonts/SegoeUI.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SegoeUI.woff2') format('woff2'),
+        url('../fonts/SegoeUI.woff') format('woff'),
+        url('../fonts/SegoeUI.ttf') format('truetype'),
+        url('../fonts/SegoeUI.svg#SegoeUI') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe_UI';
+    src: url('../fonts/SegoeUI-Light.eot');
+    src: url('../fonts/SegoeUI-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SegoeUI-Light.woff2') format('woff2'),
+        url('../fonts/SegoeUI-Light.woff') format('woff'),
+        url('../fonts/SegoeUI-Light.ttf') format('truetype'),
+        url('../fonts/SegoeUI-Light.svg#SegoeUI-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe_UI';
+    src: url('../fonts/SegoeUI-Semibold.eot');
+    src: url('../fonts/SegoeUI-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SegoeUI-Semibold.woff2') format('woff2'),
+        url('../fonts/SegoeUI-Semibold.woff') format('woff'),
+        url('../fonts/SegoeUI-Semibold.ttf') format('truetype'),
+        url('../fonts/SegoeUI-Semibold.svg#SegoeUI-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe_UI';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #212529;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    display: block;
+    text-decoration: none;
+    line-height: 0;
+}
+
+.logo-img {
+    max-height: 4rem;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.menu-link {
+    padding: 0.6rem;
+    text-decoration: none;
+    color: #212529;
+}
+
+.menu_link.burger-menu {
+    display: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+
+.menu-link:hover {
+    text-decoration: underline;
+}
+
+.btn-primary {
+    text-decoration: none;
+    color: #007bff;
+    border: 1px solid #007bff;
+    white-space: nowrap;
+    border-radius: 0.25rem;
+    display: block;
+    background-color: #ffffff;
+    transition-property: background-color, color, border-color;
+    transition-duration: 1s;
+    transition-delay: 0.15s;
+}
+
+.btn-primary.register {
+    padding: 0.375rem 0.75rem;
+}
+
+.btn-primary.btn--size {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    width: 100%;
+}
+
+.btn-primary.btn--view {
+    color: #ffffff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary.btn--view:hover {
+    background-color: #0062cc;
+    border-color: #005cbf;
+}
+
+.btn-primary:hover {
+    color: #ffffff;
+    background-color: #007bff; 
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-price {
+    font-weight: 300;
+    text-align: center;
+    padding-top: 3rem;
+    margin-bottom: 4.5rem;
+}
+
+.section-head {
+    max-width: 700px;
+    padding: 0 1rem 2.5rem;
+    margin: 0 auto;
+}
+
+.title {
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.title.title-section {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.title.title-card {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.title.title-footer {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+}
+
+.section-text {
+    font-size: 1.25rem;
+}
+
+.card-deck {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-price {
+    flex-basis: 290px;
+    min-width: 220px;
+    font-weight: 400;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    margin-right: 15px;
+}
+
+.card-price:last-child {
+    margin-right: 0;
+}
+
+.card-head {
+    padding: 0.75rem 1.25rem;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.price {
+    white-space: nowrap;
+    display: inline-block;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.price.term {
+    color: #6c757d;
+    font-size: 80%;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.list-price-include {
+    margin-bottom: 1.5rem;
+}
+
+.item-price-include {
+    white-space: nowrap;
+}
+
+.footer-inner {
+    border-top: 1px solid #dee2e6;
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.footer-column {
+    padding: 0 15px;
+    width: 100%;
+}
+
+.footer-column:first-child {
+    padding-left: 0;
+}
+
+.footer-column:last-child {
+    padding-right: 0;
+}
+
+.img-footer {
+    height: 24px;
+    width: 24px;
+}
+
+.text-muted {
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #6c757d;
+}
+
+.text-muted.text--size {
+    font-size: 80%;
+}
+
+.text-muted:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+
+    .section-price {
+        margin-bottom: 3.5rem;
+    }
+
+    .footer-inner {
+        margin-bottom: 3rem;
+    }
+
+    .footer-column {
+        padding: 0 40px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .header {
+        flex-direction: row-reverse;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .logo-img {
+        max-height: 6rem;
+    }
+
+    .menu-item {
+        margin-bottom: 1rem;
+    }
+
+    .menu-link {
+        color: #ffffff;
+        padding: 0;
+        font-size: 1.2rem;
+    }
+
+    .menu-link.burger-menu {
+        display: block;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    .btn-primary.register {
+        display: none;
+    }
+
+    .menu-list {
+        padding: 1rem 0 2rem 1rem;
+        top: 95px;
+        left: 0;
+        position: absolute;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+    }
+
+    .burger {
+        cursor: pointer;
+       }
+
+    .bar {
+        width: 35px;
+        height: 4px;
+        margin: 6px auto;
+        background-color: #ffffff;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .section-price {
+        margin-bottom: 2rem;
+    }
+
+    .card-deck {
+        flex-wrap: wrap;
+    }
+
+    .card-price {
+        margin: 0 auto 1rem auto;
+    }
+
+    .card-price:last-child {
+        margin-right: auto;
+    }
+    
+    .footer-inner {
+        flex-wrap: wrap;
+        padding-top: 1.5rem;
+    }
+
+    .footer-column {
+        padding: 0;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+}
